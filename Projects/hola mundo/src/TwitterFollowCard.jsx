@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react" 
 
 export function TwitterFollowCard ({ children, userName}) {
     const [isFollowing, setIsFollowing] = useState(false)
@@ -20,7 +20,7 @@ export function TwitterFollowCard ({ children, userName}) {
                 alt="Avatar De Prueba" />
                 <div className='tw-followCard-info'>
                     <strong>{children}</strong>
-                    <span className="tw-followCard-infoUsername">{userName}</span>
+                    <span className="tw-followCard-infoUsername">@{userName}</span>
                 </div>
             </header>
 
